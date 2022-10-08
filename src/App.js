@@ -3,6 +3,7 @@ import useLocalStorage from "use-local-storage";
 import "bootstrap/dist/css/bootstrap.css";
 import Nav from "react-bootstrap/Nav";
 import SqlHome from "./SqlHome";
+import Footer from "./Footer";
 
 function App() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -41,6 +42,7 @@ function App() {
         <div className="Github-container">Github</div>
       </div>
       <SqlHome />
+      <Footer />
     </div>
   );
 }

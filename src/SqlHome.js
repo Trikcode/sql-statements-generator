@@ -18,7 +18,7 @@ function SqlHome() {
     const formDataObj = Object.fromEntries(formData.entries());
     const { Configuration, OpenAIApi } = require("openai");
     const configuration = new Configuration({
-      apiKey: "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",
+      apiKey: "",
     });
 
     const openai = new OpenAIApi(configuration);
