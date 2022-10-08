@@ -18,7 +18,7 @@ function SqlHome() {
     const formDataObj = Object.fromEntries(formData.entries());
     const { Configuration, OpenAIApi } = require("openai");
     const configuration = new Configuration({
-      apiKey: "",
+      apiKey: process.env.REACT_APP_OPENAI_API_KEY,
     });
 
     const openai = new OpenAIApi(configuration);
@@ -38,9 +38,10 @@ function SqlHome() {
         setIsLoading(false);
       })
       .catch((error) => {
-        setSqlError("Hey there buddy! Seems you typed something wrong!");
+        setSqlError(error);
       });
-    event.target.reset();
+    //reset form
+    // event.target.reset();
   };
   const copyToClipboard = (e) => {
     navigator.clipboard.writeText(sqlStatement.response);
