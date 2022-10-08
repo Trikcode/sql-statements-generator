@@ -39,7 +39,14 @@ function App() {
             </Nav.Item>
           </Nav>
         </div>
-        <div className="Github-container">Github</div>
+        <div className="Github-container">
+          <a
+            style={{ textDecoration: "none" }}
+            href="https://github.com/Trikcode"
+          >
+            <button className="github"> Github</button>
+          </a>
+        </div>
       </div>
       <SqlHome />
       <Footer />
