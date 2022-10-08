@@ -1,0 +1,111 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 5rem;
+  background-color: #081229;
+  border-radius: 5px;
+}
+.main-content {
+  background-color: #0f172a;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 10px 50px 10px 50px;
+  border-radius: 5px;
+}
+.sql-container {
+  background-color: #0f172a;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 10px 50px 10px 50px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App {
+  color: var(--text-primary);
+  background-color: var(--background);
+  font-size: large;
+  font-weight: bold;
+  padding: 20px;
+  height: calc(100vh - 40px);
+  transition: all 0.5s;
+}
+button {
+  color: purple;
+  background-color: var(--background);
+  border: 1px purple dotted;
+  transition: all 0.5s;
+}
+h1 {
+  transform: translateY(0px);
+  transition: all 0.2s ease-in 0.2s;
+  line-height: 1;
+  margin: 1.67em 0;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 40px;
+}
+.desc {
+  color: purple;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  max-width: 660px;
+  transform: translateY(0px);
+  transition: all 0.3s ease-in 0.4s;
+  line-height: 1.5;
+  padding-bottom: 30px;
+}
+span {
+  color: var(--accent);
+  padding-left: 5px;
+  font-size: 15px;
+}
+.result-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  height: 100%;
+  background-color: #0d0e0e;
+  border-radius: 5px;
+  color: yellow;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+/* phone media query */
+@media only screen and (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+  .main-content {
+    display: none;
+  }
+  .sql-container {
+    padding: 10px 10px 10px 10px;
+  }
+  .desc {
+    font-size: 12px;
+  }
+  .result-container {
+    font-size: 12px;
+  }
+}
+.btn {
+  background-color: #0f172a !important;
+  padding: 5px 30px 5px 30px !important;
+}
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
